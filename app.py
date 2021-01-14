@@ -1,8 +1,11 @@
+import os, sys
 import json
 from flask import Flask,request,render_template
 from model import predict as p
 # create the flask object
 app = Flask(__name__)
+port = int(os.environ.get("PORT", 5000))
+
 @app.route('/')
 def index():
     return "Index Page"
@@ -17,5 +20,5 @@ def predict():
     return json.dumps(str(prediction))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0', port=port)
 
