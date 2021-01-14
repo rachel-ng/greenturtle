@@ -40,4 +40,4 @@ def make_prediction(data):
     print(score)
     # You may want to further format the prediction to make it more
     # human readable
-    return {'prediction':prediction,'message':"This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))}
+    return {'prediction':prediction,'message':"This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)),'img':data}
