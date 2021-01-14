@@ -15,7 +15,6 @@ def predict():
     if data == None:
         return 'Got None'
     else:
-        # model.predict.predict returns a dictionary
         prediction = p.make_prediction(data) 
     return json.dumps(str(prediction))
 
