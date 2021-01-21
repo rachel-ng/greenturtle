@@ -22,4 +22,4 @@ def make_prediction(data):
     prediction = model.predict(img_array)
     score = tf.nn.softmax(prediction[0])
     class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
-    return {'message':"most likely a {} with {:.2f} % confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)),'img':data}
+    return {'prediction':"most likely a {} with {:.2f}% confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))}
