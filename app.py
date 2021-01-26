@@ -1,12 +1,15 @@
 import os, sys
 import json
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 from model import predict as p
 
 
 # create the flask object
 app = Flask(__name__)
-port = int(os.environ.get("PORT", 5000))
+CORS(app)
+
+# port = int(os.environ.get("PORT", 5000))
 
 @app.route('/')
 def index():
