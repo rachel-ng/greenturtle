@@ -27,8 +27,7 @@ def predict():
 
     response = jsonify(prediction)
     response.headers.add("Access-Control-Allow-Origin", "*")
-    response.headers.add("Access-Control-Allow-Methods", "*")
-    response.headers.add("content-type", "application/json")
+    response.headers.add("Content-Type", "application/json")
     return response 
 
 #if __name__ == "__main__":
