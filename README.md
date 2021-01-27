@@ -14,3 +14,11 @@ api for tensorflow model hosted on heroku
 
 <sup>sauce: [stack overflow](https://stackoverflow.com/questions/61062303/deploy-python-app-to-heroku-slug-size-too-large)</sup>
 
+
+
+#### re: app crashing because it exceeded the memory quota 🤠
+
+use 2 workers.
+
+
+
