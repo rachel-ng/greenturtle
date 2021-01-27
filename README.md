@@ -26,17 +26,17 @@ just reduce the number of workers.
 <sub>sauce: [heroku](https://devcenter.heroku.com/articles/ruby-memory-use#too-many-workers) </sub>
 
 
-### cors issues galore 
+### re: cors issues galore 
 
 <sup>all my homies hate cors issues</sup>
 
 
-##### flask_cors 
+##### re: flask_cors 
 
 <sup>sauce: [stack overflow](https://stackoverflow.com/questions/25594893/how-to-enable-cors-in-flask)</sup>
 
 
-##### "non-simple" requests
+##### re: "non-simple" requests
 
 `Access-Control-Allow-Methods`,, *shakes fist*
 
