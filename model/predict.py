@@ -10,8 +10,8 @@ from tensorflow import keras
 model = tf.keras.models.load_model('model/access-a-meme_model.h5')
 
 def make_prediction(data):
-    img_height = 180
-    img_width = 180
+    img_height = 250 
+    img_width = 250
     img_url = data 
     img_name = ''.join(random.choice(string.ascii_letters) for i in range(10))
     img_path = tf.keras.utils.get_file(img_name, origin=img_url)
